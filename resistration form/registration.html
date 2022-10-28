@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script>
+        function val()
+        {
+        var firstname=document.getElementById("firstname").value;
+        var lastname=document.getElementById("lastname").value;
+        var date=document.getElementById("date").value;
+        var email=document.getElementById("e_mail").value;
+        var mobileno=document.getElementById("mobile_no").value;
+        if(firstname=="" || lastname=="" || date=="" || email=="" || mobileno=="" )
+        {
+        window.alert("please fill all coloumns");
+        }
+        else
+        {
+        window.alert("welcome"+firstname+lastname);
+        }
+        }
+
+
+    </script>
+
+</head>
+<body>
+<form class="">
+<table class="table text-dark align-middle bg-secondary bg-opacity-50">
+<tr>
+<td colspan="2"><h2>STUDENT REGISTRATION</h2></td>
+</tr>
+<tr>
+<td>FIRST NAME</td>
+<td><input type="name" name="firstname" id="firstname"</td>
+</tr>
+<tr>
+<td>LAST NAME</td>
+<td><input type="name" name="lasttname" id="lastname"</td>
+</tr>
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type="date" name="date" id="date"</td>
+</tr>
+<tr>
+<td>E-MAIL</td>
+<td><input type="email" name="email" id="e_mail"</td>
+</tr>
+<tr>
+<td>MOBILE NO</td>
+<td><input type="number" name="mobileno" id="mobile_no"</td>
+</tr>
+    
+
+<tr>
+<td colspan="2"><input type="button" value="Register" onclick="val()"</td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
